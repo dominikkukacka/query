@@ -247,7 +247,7 @@ function addStreet(vs) {
       must: [
         {
           match_phrase: {
-            'address_parts.street': vs.var('input:address').toString()
+            'address_parts.street': vs.var('input:street').toString()
           }
         }
       ],
